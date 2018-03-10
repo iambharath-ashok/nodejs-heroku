@@ -2,7 +2,7 @@
     - heroku login
     - heroku keys:add
     - heroku keys
-    - heroku -v git@heroku.com
+    - ssh -v git@heroku.com
     - make port dynamic by reading from env of heroku servers ( process.env.PORT )
     - add the "start": "server.js" object (script) to "test" object in package 
     - git add .
