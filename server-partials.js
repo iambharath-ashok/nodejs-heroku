@@ -39,10 +39,10 @@ app.use((req, res, next) => {
  * Express middleware maintainance scenario
  * 
  */
- app.use((req, res, next) => {
+//  app.use((req, res, next) => {
 
-    res.render('maintenance.hbs');
- });
+//     res.render('maintenance.hbs');
+//  });
 
 
 /**
@@ -77,4 +77,11 @@ app.get('/about', (req,res) => {
     });
 });
 
+
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs',{
+        projectMessage: 'node.js-heroku project'
+    });
+});
 
